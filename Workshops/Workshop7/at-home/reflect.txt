@@ -1,0 +1,67 @@
+1. Why did we choose m_health to be a signed integer? (Hint: what happens if the Hero has a health of 1, and someone does 2 points of damage to them.)
+
+- It is because there might be more than 1 health deducted from m_health, which means if we defined unsigned integer, the program must have a crash and does not understand the negative value of m_health.
+
+2. Does the Hero class need to know about the existence of the class SuperHero? (Hint: do a search in Hero.cpp, does the word “SuperHero” appear anywhere in it?) How about the reverse, does SuperHero know about the Hero class?
+
+- The parent class (Hero class) does not need to know about the child class (Super Hero class) but the child class needs to know the existence of parent class because the child class is inherited from parent class, and the parent class(Hero class) only works for itself. There should not happen the case to use the functions or objects from Super Hero class in Hero class. However, there must be many cases to use functions in Super Hero class from Hero class. Thus, there is a method to call with using prefix::parent class.
+
+
+3. The program prints out “AncientBattle!” when 2 Heros fight. It prints out “SuperFight!” when 2 SuperHeros fight. When you tried to make a Hero fight a SuperHero, what did it print out?
+
+- It printed out "Ancient Battle! (Hector vs WonderWoman) on the console. Parent class(Hero class) cannot be a child class(SuperHero class). This is why even though this is the fighting between SuperHero and GreekHero, this case of fighting between Greek Hero and Super Hero follows the default class of the display function( greek hero vs greek hero display function). 
+
+
+4.True or False: are the following a valid program definition for main? 
+
+int main() {
+  Hero ("Achilles",  20, 6) * Hero  ("Hector",    30, 5);
+}
+
+how about this?
+
+int main() {
+  ( Hero ("Achilles",  20, 6) * Hero ("Hector",    30, 5) ) 
+                              *
+  ( Hero ("Atalanta",  10, 3) * Hero ("Hippolyta", 10, 2) );
+}
+
+- They both work properly. The first Hero fighting has proper parameter with temporary named object. The winner is Hector because Hector has more health value compared to Achilles's health value.
+
+- The second hero fighting also works properly. Two different classes are multiplied and return the winner. The winner fights with the other winner of two different classes, eventually returns again with the final winner. 
+
+
+
+
+
+
+QUIZ REFLECTION:
+
+Quiz 2 Reflection. 
+______________ class is responsible for processing input from and output to a file stream.
+
+=> I wrote the answer as fstream, but the answer should include std::fstream for perfectly correct answer.
+
+
+Quiz 7 Reflection. 
+
+#include <iostream>
+#include <fstream>
+
+ int main() {
+     int i;
+     std::ofstream f("student.txt")    // Write a declaration to write into student.txt file
+     if (f.is_open()) {
+         f << "Max" << std::endl;   
+         f << "John" << std::endl;      
+     }
+ }
+
+What is the output?
+
+- std::ofstream f("student.txt") ==> This syntax connects to the file of "student.txt"
+
+- The output is 
+		Max 
+		John
+    => Above output is not printed on the console but would store it in the file of "student.txt" if the condition is true.

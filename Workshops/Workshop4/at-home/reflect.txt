@@ -1,0 +1,63 @@
+1) What is meant by a safe empty state? What other safe empty states could you choose for the Passenger type? Explain why.
+- Safe empty state is the concept of making sure a string is not interrupted by other strings so it is safe whenever we use. In my function,  I used strncpy function to make it clear in my constructor
+2) Describe how you would modify the code to minimize duplication using the syntax that you have covered in the course to date.
+- Rather than copying and pasting from the duplicated syntax, I used the needed function itself in the new function with assigning new value. In my function. This case is the isEmpty function during the workshop4 home part.
+
+3) Explain the principal benefit of minimizing code duplication.
+- This avoids the using of memory and resource as well as possibly avoiding duplication interruption
+
+4) Explain why the canTravelWith(...) member function can access the pri-vate data variables of the referenced object.
+- It is because I copied the private members from reference and use it. Thus, we are not able to change the initial variables but check the value and the copied members.
+
+5) Describe how you would improve your code to allow for changes in the siz-es of the arrays holding the name and destination data.
+-  We need to use an initialized pointer and hold the name and destination data by allocating dynamic memory. 
+
+6) What do you need to correct when you use the strncpy(...) function?
+-  We need to make sure to assign null value for the last index. By doing it, we confirm the last index is null.  For my workshop, I worked as below
+strncpy(passengerName, pName, LENGTH);
+strncpy(passengerDestination, destinationName, LENGTH);
+
+passengerName[LENGTH - 1] = '\0';
+passengerDestination[LENGTH - 1] = '\0';
+
+
+
+
+QUIZ REFLECTION:
+
+Q1 Reflection
+1. A C++ binary member operator receives ________________ parameters (select one)
+   - I confused operator and operands during the quiz. The left operand is the current object and the member function takes one explicit parameter. For example, Student& operator+=(float g);
+
+
+Q5 Reflection
+5. Change the class definition in question 4 to make OOP244 a class with a resource. Add the required declarations to your new definition.  You do not need to give any implementations.
+
+class OOP244 {
+	private:
+		int noOfStudents
+		long * studentName
+
+	public:
+		OOP244();
+		OOP244(const char name[], int);
+
+		OOP244 (const OOP244&)
+		OOP244& operator=(const OOP244&)
+
+		// other member functions
+
+
+- This question is about the giving the class with a resource. Thus, we use long* studentName instead of long studentName[M_STUDENTS], and then declaration for the prototypes of the function is OOP244 (const OOP244&) and OOP244& operator=(const OOP244&).
+
+
+Q6 Reflection
+6. Which instance variables in question 5 require a shallow copy, which require a deep copy?
+a) Shallow copy: int noOfStudent;
+b) Deep copy: long* StuNo [M_STUDENTS];
+
+- Deep copying and deep assigning involve copying the resource data.  
+- Shallow copying and assigning involve copying the instance variables only and are only appropriate for non-resource instance variables. 
+
+Based on the explanation and text book, shallow copy is stitic memory and deep copy dynamic memory.
+

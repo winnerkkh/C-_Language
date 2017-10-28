@@ -1,0 +1,75 @@
+Reflect
+
+1) What happens to dynamic memory if it is not deallocated?
+- It is related to the term "Memory Leaking". After allocating the dynamic memory, and when the tasks done, you no longer need the allocated memory, and there is some wasted value (garbage value) on the allocated memory. Thus, if you do not deallocate the memory, you are not able to use the memory for next time when you need to use another memory, and it also makes resource ineffective. 
+
+2) Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+- Since we allocate the dynamic memory (allocated 2 memory for kingdom for the workshop) the purpose of creating another array is to increase the size of the existing array (allocate 3 memory for kingdom). This is why we need to copy the existing array of dynamically allocated memory and paste it into the new dynamic memory array which has the new bigger dynamic memory allocated.
+
+3) The Kingdom structure stores the name in an array of characters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the name. Do we have a memory leak there? Ex-plain.
+I do not think there will be a memory leak that will occur. It is because in my function, when I declared “ delete[] pKingdom;” this statement also remove all the data members at the same time. This is why we do not need to write a wasted statement again.
+
+4) In your program, there are two display(...) functions. How does the compiler know which one should be called from your main? Explain.
+We need to think of the concept for the overloading. When we write a definition with naming for identifier, it is okay to have the same name of identifier but need to have some different conditions for complier to understand what the function is going to be used in proper time. Thus, there must be different in parameter types and the order of the parameter types. Depending on putting the value of 2 different conditions, we are able to make sure the complier to use right function in right place and time.
+
+5) Explain what have you learned in this workshop.
+- I learned the important part in C++ for the concepts how to allocate and deallocate dynamic memory in using array such as “pointer = new Type[size];” through the workshop and even more of “pointer = new Type;” Furthermore, compared to C language, it was interesting that we are allowed to have more of the function in my program. However, I still need to study of the kinds of memory. I am still confused how the memory is allocated in different sections clearly. I hope I would understand memory style after this semester. 
+
+
+Quiz 3 Reflection:
+
+Correct the following program to protect data from changes by the main() function and ensure that the number of students is non-negative.
+	#include <iostream>
+class OOP244 { 
+	private:
+int noStudents;
+public:
+	void display { std::cout << noStudents; }
+	void display() const { std::cout << noStudents;}
+	void set(int studentNumber){
+		if(studentNumber>0){
+	     	noStudents = studentNumber;
+			}
+	  	}
+	};
+
+	int main() {
+		OOP244 sectionAB;
+		SectionAB.set(79);
+		sectionAB.display();
+	}
+
+// I mostly got the wrong answer for this question. I was not to sure on how to make a set function.
+After solving this question through workshop, I understood moving and using private variables(instance variables) from public functions. Thus, i can use it into main function without chaning the value of instance variable.
+
+
+Quiz 4 Reflection:
+
+Which statement removes the next character from the standard input buffer?
+
+cin.ignore();
+
+// I left it blank. I did not understand ignore statement. I think it is the same concept as of flushKeyboard function "while ( getchar() != '\n' );" in C.
+
+
+
+
+Quiz 6 Reflection:
+
+Add the statement(s) that displays the number e to 4 decimal places on standard output
+
+	#include <iostream>
+	int main() {
+		double e = 2.71828182845;
+		
+		std::cout.setf(iso::fixed);
+		std::cout.precision(4);
+	
+		std::cout << e << std::endl;
+		}
+
+// I wrote down only "std::cout.precision(4) as the answer;". By writing the statement "std::cout.setf(iso::fixed);", the value of e does not change. Thus, when we use "std::cout.precision(4);", we exactly know what the output looks like.
+
+
+
+

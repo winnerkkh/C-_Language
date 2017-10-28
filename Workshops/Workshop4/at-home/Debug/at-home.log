@@ -1,0 +1,13 @@
+﻿  w4_in_home.cpp
+  Passenger.cpp
+e:\college\second semester\oop244\workshops\workshop4\at-home\passenger.cpp(21): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+e:\college\second semester\oop244\workshops\workshop4\at-home\passenger.cpp(22): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+e:\college\second semester\oop244\workshops\workshop4\at-home\passenger.cpp(32): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+e:\college\second semester\oop244\workshops\workshop4\at-home\passenger.cpp(33): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  Generating Code...
+  at-home.vcxproj -> E:\College\Second Semester\OOP244\Workshops\Workshop4\at-home\Debug\at-home.exe
+  at-home.vcxproj -> E:\College\Second Semester\OOP244\Workshops\Workshop4\at-home\Debug\at-home.pdb (Full PDB)

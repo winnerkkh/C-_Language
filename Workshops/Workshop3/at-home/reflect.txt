@@ -1,0 +1,42 @@
+1) What is the size of each C-style character string that stores a name for the account? Why?
+- The storage size of each C-style character takes 1 byte each character in the memory. It has to consider the NULL value(“\0”) with the number of characters. This is why my workshop initializes “\0” for the character string array so total 41 byte in my workshop.
+
+2) Using examples from your own code explain which features of object orien-tation you used.
+-In my workshop, I used the features of orientation with display function. My display function’s value of year, balance owing would take the value from main and store it into instance variables which are located in private class. Thus, this uses the concept of privacy and encapsulation.
+
+3) Your class declares two member functions named set(...).  In C, this would generate an error.  Explain why this is allowed in C++.  
+- Unlike C, C++ allows us to use same function name by understanding the concept of overloading. But to use the overloading concept, there must be difference in parameter types and the order of the parameter types. Thus, C++ allows to use the same function name.
+
+4) How do you ensure that the balance/refund displays to 2 decimal places?
+- I used "cout.setf(ios::fixed);" and "”for both balance and refund displays. For the purpose of “cout.setf(ios::fixed)”, There must be a possibility of changing decimal places after using “cout.precision(2);". Thus, it protects changing the decimal place, we need to set the decimal exactly as the value initialized at the beginning.
+
+5) What do you need to check before storing data for a tax year?
+- Ths reason is that to check if the array(m_years) is full or not and if the input sin is valid or not. Without checking this, it is pointless to store data for a tax year.
+
+6) What have you learned during this workshop?
+- I learned many different thing such as defining a class type and how to access private data through public member functions. However, for this workshop, I faced many difficulties with using array with checking valid sin number which is writing equations.  For being a better programmer, I need to study math.  
+
+
+
+Quiz 5 Reflection:
+If you declare a constructor with two arguments but do not declare a default constructor, the compiler inserts the default constructor for you (true or false) _____________? - False
+
+- I misunderstood the question. Thus, if there are no arguments in constructor, it is not implemented which means, the complier never inserts for empty body, no arument default constructor. Therefore the answer is false
+
+
+Quiz 6 Reflection: 
+Complete the code to return an unmodifiable reference to the current object.
+
+Const oop244& OOP244::foo() const {
+	
+	// . . . member function logic
+	
+	Return *this
+	}
+
+- I only wrote "const" because I did not remember the syntax of "const oop244& OOP244". I understand how to write it down from now on. Thus, "const oop244& OOP244" and " Return *this" makes the return value as an unmodifiable to the current object.
+
+  
+
+
+

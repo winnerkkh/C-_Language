@@ -1,0 +1,11 @@
+﻿  CRA_Account.cpp
+e:\college\second semester\oop244\workshops\workshop3\at-home\cra_account.cpp(23): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+e:\college\second semester\oop244\workshops\workshop3\at-home\cra_account.cpp(24): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+e:\college\second semester\oop244\workshops\workshop3\at-home\cra_account.cpp(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+e:\college\second semester\oop244\workshops\workshop3\at-home\cra_account.cpp(30): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  at-home.vcxproj -> E:\College\Second Semester\OOP244\Workshops\Workshop3\at-home\Debug\at-home.exe
+  at-home.vcxproj -> E:\College\Second Semester\OOP244\Workshops\Workshop3\at-home\Debug\at-home.pdb (Full PDB)

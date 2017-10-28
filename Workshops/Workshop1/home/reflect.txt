@@ -1,0 +1,17 @@
+1. What is a namespace? Explain its purpose.
+- There must be a possibility that functions or variables have the same name in a scope. For this case, this would make compile error because of the same name variable or functions. To avoid this possibility, we make variables and functions in a different name space.
+
+2. Why are header files needed? Explain.
+- There would be a million of codes in .cpp file in real circumstance. It must be hard to find compile error in .cpp file if all the functions are in the same file. If we would like to find the errors, it is very difficult but if functions are separated in different header files, it would be much easier to find error in different locations.
+
+3. In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+- In C++, header files include only declarations and cpp files include definitions of functions. Therefore, header files do not need to be compiled because it is waste of resource.
+
+4. Explain why you should never include .cpp files in another file.
+-  If you have a .cpp file in another file, which means you declare twice in one .cpp file. This violate one definition rule. This would result error.  
+
+5. Is there any benefit to put the source code of a program in modules or should we put everything in a single file? Explain.
+- It would benefit to put the source code of a program in modules because it is very easy to find errors or functions that we want when the programs are separated. If we put everything in a single file, it would make it difficult to read and understand code because it look complicated and messy to see on one screen.
+
+6. Explain what have you learned on this workshop.
+- I have learned some differences between C++ and C such as what an object is with how important one definition rule is. However, I need to study more about one definition rule how it is used in different cases to prepare for my future career in real circumstance of work.

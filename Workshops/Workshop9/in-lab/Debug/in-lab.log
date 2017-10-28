@@ -1,0 +1,11 @@
+﻿  String.cpp
+e:\college\second semester\oop244\workshops\workshop9\in-lab\string.cpp(30): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+e:\college\second semester\oop244\workshops\workshop9\in-lab\string.cpp(47): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+e:\college\second semester\oop244\workshops\workshop9\in-lab\string.cpp(78): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+e:\college\second semester\oop244\workshops\workshop9\in-lab\string.cpp(197): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  in-lab.vcxproj -> E:\College\Second Semester\OOP244\Workshops\Workshop9\in-lab\Debug\in-lab.exe
+  in-lab.vcxproj -> E:\College\Second Semester\OOP244\Workshops\Workshop9\in-lab\Debug\in-lab.pdb (Full PDB)

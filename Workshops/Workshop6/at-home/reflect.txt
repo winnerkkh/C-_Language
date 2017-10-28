@@ -1,0 +1,11 @@
+1) Explain why the copy assignment operator checks for self-assignment before doing anything else
+- It is because there might be a chance to delete the original data, so to protect the deletion of original data, we need to make sure if the data is stored correctly or not. Eventually, if we check it first, we can protect the disaster which is charged data or deleted data.
+
+2) Explain why a class that uses dynamic memory to hold its resources needs custom definitions of its copy constructor and its copy assignment operator.
+-We expects the resource to distinguish independently between copied objects. Thus, the class does not influence another original object. The copy constructor copies the data into the instance members and the copy assignment operator copies right member functions when the dynamic memory is allocated.
+
+3) How did you avoid duplication of code?
+- To avoid the duplication of code, I used *this keyword specifically = operator in my workshop. Thus, I do not need to write the same syntax that I used earlier and does not make the code look complicated.
+
+4) List what you have learned in completing this workshop
+- This workshop gave me a time to review and developed how the dynamic allocation and deallocation work again. I remember that I did it in workshop2 for allocating and deallocating in main function. However, I did it in operator function felt kind of different even though the memory allocation concept is the same.  

@@ -1,0 +1,24 @@
+1. A string can have a capacity of N, but have a length less than that. You have used such strings in the past, e.g. char myString[100] = “hello world”; has a size of 100 but a length of 11. Is your class coded to allocate exactly L + 1 bytes of storage for any string, where L = string length and 1 is the storage for the 0 character? Can your class still work if you decided to be generous and give all your strings more capacity than they need? 
+- I think it would work because my program does not use much memory but on a larger program with more strings in real life, we may run out of memory and it would be less efficient. 
+
+2. Given how hard you found it to debug your string library, is it a good idea to always make your own libraries, or to use the standard one used by everybody that are tested and true? 
+- It is a good idea to use the libraries and that are tested and true because these libraries have been debugged after being used a lot of times. This means, errors are a lot more rare.
+
+3. When you use your sict::String class in the main function, do you have to set them to the safe empty state? Do you have to clean up after them at the end of the function? Can you add 2 strings together without worrying about whether data is lost or not? How would this have made some of your previous labs easier, if you could use sict::String instead of regular char arrays?
+- The string library automatically allocate and deallocate memory which means I do not have to worrry about the memory allocation once I coded using strings. This would help previous lab because we do not allocate and deallocate memory.
+
+
+
+
+Quiz 2 Reflection. 
+The C++ language is a strong typed language.
+- I wrote the answer as "Polymorphic" but the actual answer is "strong". I thought the question was asking the concept of polymorphic language. I know understand the specification of C++ by reflecting the answer with this question.
+
+
+Quiz 5 Reflection. 
+5. Write the declaration for the overloading polymorphism.
+
+void display() const {std::cout<<"Empty";}
+void display(int a) const {std::cout<<a;}
+
+- I misunderstood of the question. I thought the question is asking something different declaration for the overloading. But the question is asking the declaration for the overloading itself. Thus, the condition of overloading is to have different type of parameter, type or parameter name.

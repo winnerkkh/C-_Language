@@ -1,0 +1,51 @@
+
+1. Discuss why the operator+= should return a reference to Fraction.
+-The operator += would change the current fraction object to allow chaining my workshop beceause I added the right operand to the current fraction object.
+
+2. List your uses of the pointer to the current object to simplify your code.
+- During my workshop, I used 3 different operator which are +operator, *operator, and the +=operator. Furthermore, I used the return type of a pointer as current object, rather than copying, I added to current object by using *this.
+
+3. Identify the temporary objects in the tester module.
+- There are two temporary objects that are in *operator and +operator. Thus, the two temporary objects are used to store new values of fraction.In the + operator: Fraction lhs = *this; (tempFirstFraction: 1/3 and tempOtherFraction: 2/4 reduced to 1/2) (1/3 + 1/2) = 5/6 and, in the * operator: Fraction tempOtherFraction= *this; 
+
+4. Identify simplifications that you could make to your class without affecting the interface to the client code.
+- I tried to not to copy logic and just re-used the == opererator and +operator in my != operator and += operator. So, it looks simple and does not affect to the interface to the client code.
+
+5. Explain what you have learned in this workshop.
+- I still have a difficulty with using operator but it is slightly getting better what the operator is exactly. I think I need more time to use operator with many different type of operator.
+
+
+4.	I could simplify my code by removing either my == operator overload or my != because they both return bools, one of them if they are the same and the other if they are different. This means that if I simply use the == than it will tell me if the objects are different by returning a false making the != unnecessary.
+5.	In this workshop I finally understood the usage of temporary objects, I also cemented my knowledge of creating overloaded operators. 
+
+
+
+Quiz 1 Reflection
+1, A C++ binary helper operator receives two parameters.
+
+- In C++ binary helper operator receives two parameters. For example, Student operator+(const Student& s, float grade)
+
+Quiz 2 Reflection
+2, C++ provides the keyword friend to grant a helper function access to the private members of a class.
+
+- In C++, friend is a keyword to access to private data members. 
+
+Quiz 3 Reflection
+3, Code the prototypes for the two helper operators that add a double to an object of class A and return the resultant object of class A :
+
+A operator+(const A&, double);
+A operator+(double, const A&);
+
+- Need to think of the logic as "a + b" and "b + a" are the samething. This is why we use above operator function.
+
+Quiz 4 Reflection
+4, What is the output of the following program? 
+B: 7
+A: 0
+B: 5
+~: 5
+Bye
+~: 12
+~:7 
+
+- We need to think of the temporary object.

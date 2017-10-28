@@ -1,0 +1,6 @@
+﻿  w2_in_lab.cpp
+  Kingdom.cpp
+d:\college\second semester\oop244\workshops\workshop2\in-lab\kingdom.cpp(20): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  in_lab.vcxproj -> D:\College\Second Semester\OOP244\Workshops\Workshop2\in-lab\Debug\in_lab.exe
+  in_lab.vcxproj -> D:\College\Second Semester\OOP244\Workshops\Workshop2\in-lab\Debug\in_lab.pdb (Full PDB)

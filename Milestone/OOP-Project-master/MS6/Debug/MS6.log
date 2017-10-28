@@ -1,0 +1,13 @@
+﻿  Product.cpp
+  main.cpp
+  ErrorMessage.cpp
+  Date.cpp
+  AmaProduct.cpp
+  AmaPerishable.cpp
+  AidApp.cpp
+c:\users\kh\desktop\college\second semester\oop244\milestone\oop-project-master\ms6\aidapp.cpp(24): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\kh\desktop\college\second semester\oop244\milestone\oop-project-master\ms6\aidapp.cpp(69): warning C4804: '<=': unsafe use of type 'bool' in operation
+  Generating Code...
+  MS6.vcxproj -> C:\Users\KH\Desktop\College\Second Semester\OOP244\Milestone\OOP-Project-master\MS6\Debug\MS6.exe
+  MS6.vcxproj -> C:\Users\KH\Desktop\College\Second Semester\OOP244\Milestone\OOP-Project-master\MS6\Debug\MS6.pdb (Full PDB)

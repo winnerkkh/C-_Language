@@ -1,0 +1,67 @@
+1. What is the difference between an abstract base class and a concrete class?
+- An abstract class is a interface define only unlike a concrete class which implements that interface. However, the abstract class does not have any implementation because it is pure interface.
+ 
+2. Why do we need to have a pure virtual function in a base class?
+- The pure virtual function is able to make the derived class to implement any pure virtual functions from a base class. This gives programmers for the chances to save time and can code in the abstract base class.
+
+3. Explain what have you learned in this workshop.
+- I learned how the base class and derived class interacted each other with using its actual functions in derived class through this workshop8. However, I need to get used to writing syntax for derived class function because it was a little difficult to write syntaxes properly. 
+
+
+
+Quiz 3 Reflection: _______________class inherits a pure virtual function which doesn’t provide an implementation for functions.
+- I wrote the answer as "concrete" but the answer is "abstract". I now understand the defference between abstract and concrete class (This is also the first reflect question above)
+
+
+Quiz 7 Reflection: An interface in C++ is an abstract base class with no data members.
+a. true
+b. False
+-The answer is true. Abstract base class defines interface with no data members.
+
+
+Quiz 8 Reflection: How does static cast conversion (static_cast<double>(minutes)/ 60;) support in C++? 
+a.It rejects conversions between pointer and non - pointer types. 
+b.It rejects conversions between related types.
+c.It rejects conversions between different types.
+
+- I actually did not understand question during the quiz and chose C. However, the answer is a. Based on OOP note, it does not accept conversions between pointer and non-pointer types.
+
+
+
+Quiz 9 Reflection:
+
+Identify the type of template for the following given codes (a) and (b) and write the answer in each blank.
+(a)
+________________________________________
+template<typename T>
+void swap(T& a, T& b) {
+T c;
+c = a;
+a = b;
+b = c;
+}
+- I wrote "fundmental type". However, the answer is "Funcion template" because the written code inside, it starts function at the beginning.
+
+
+
+(b)
+_________________________________________
+template <class T, int N>
+class Array {
+T a[N];
+public:
+T& operator[](int i) 
+{ 
+return a[i]; 
+} 
+};
+
+- I wrote "fundmental type". However, the answer is "Class template". All the code inside is all about the class.
+
+
+
+
+
+
+
+
